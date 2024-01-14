@@ -11,7 +11,7 @@ components:
         dockerCompose:
             build:
                 context: ./backend
-                dockerfile: Dockerfile
+                dockerfile: Dockerfile_new
                 target: dev
             environment:
                 FRONTEND_URL: 'https://{{ components.app.ingress.hosts[0].hostname }}'
